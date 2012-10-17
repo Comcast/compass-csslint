@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CSS Lint for SASS &amp; Compass by Comcast</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">CSS Lint for SASS &amp; Compass</h1>
+        <p class="header">Easily integrate CSS Lint into your projects that use the Compass CSS Framework</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Comcast/compass-csslint/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Comcast/compass-csslint/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Comcast/compass-csslint">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Comcast">Comcast</a></p>
+
+
+      </header>
+      <section>
+        <h2>Installation</h2>
+
+<p>There is currently a bug in Compass that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this custom version of Compass that includes compass-csslint:</p>
+
+<p><a href="https://github.com/Comcast/compass">https://github.com/Comcast/compass</a></p>
+
+<p>Clone that project, then from the root run</p>
+
+<pre><code>$ gem build compass.gemspec
+</code></pre>
+
+<p>Once that builds, you'll need to first uninstall your existing Compass gem</p>
+
+<pre><code>$ gem uninstall compass
+</code></pre>
+
+<p>And then install your locally-built version of Compass</p>
+
+<pre><code>$ gem install compass-0.12.2.b2400e9.gem
+</code></pre>
+
+<p>Once that is installed, you can safely install compass-csslint. Clone the repo:</p>
+
+<p><a href="https://github.com/Comcast/compass-csslint">https://github.com/Comcast/compass-csslint</a></p>
+
+<p>From the root of that project run</p>
+
+<pre><code>$ gem build compass-csslint.gemspec
+</code></pre>
+
+<p>And then install your locally-built version of the gem</p>
+
+<pre><code>$ gem install compass-csslint-0.0.1.gem
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Run the following command from the root of your Compass project:</p>
+
+<pre><code>$ compass csslint
+</code></pre>
+
+<p>To view options:</p>
+
+<pre><code>$ compass csslint --help
+</code></pre>
+
+<h2>Additional Links</h2>
+
+<p>For a bare-bones sample project to see this in action, checkout the <a href="https://github.com/Comcast/compass-csslint-sample">compass-csslint-sample</a> repo</p>
+
+<p>To run CSS Lint without Compass, you can use the standalone ruby gem:</p>
+
+<pre><code>$ gem install css_lint_ruby
+</code></pre>
+
+<ul>
+<li><a href="https://rubygems.org/gems/css_lint">https://rubygems.org/gems/css_lint</a></li>
+<li><a href="https://github.com/Comcast/css_lint_ruby">https://github.com/Comcast/css_lint_ruby</a></li>
+</ul><h2>Authors</h2>
+
+<ul>
+<li>John Riviello - <a href="https://github.com/JohnRiv">https://github.com/JohnRiv</a>
+</li>
+<li>Mike Ball - <a href="https://github.com/mdb">https://github.com/mdb</a>
+</li>
+</ul><p>Thanks for assistance and contributions:</p>
+
+<ul>
+<li>Jen Valure - <a href="https://github.com/calophi">https://github.com/calophi</a>
+</li>
+<li>Mike Rottina - <a href="https://github.com/rottina">https://github.com/rottina</a>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35632547-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
