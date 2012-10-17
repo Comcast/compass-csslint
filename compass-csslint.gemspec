@@ -4,10 +4,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "compass-csslint"
-  gem.version       = "0.0.1"
+  gem.version       = "0.0.2.pre"
   gem.authors       = ["John Riviello", "Mike Ball"]
-  gem.description   = %q{Runs CSS Lint against the CSS that Sass/Compass generates}
-  gem.summary       = %q{Easily integrate CSS Lint into your projects that use the Compass CSS Framework}
+  gem.description   = %q{Easily integrate CSS Lint into your projects that use the Compass CSS Framework}
+  gem.summary       = %q{Runs CSS Lint against the CSS that Sass/Compass generates}
   gem.homepage      = "http://comcast.github.com/compass-csslint/"
 
   gem.files         = ['./lib/compass-csslint.rb']

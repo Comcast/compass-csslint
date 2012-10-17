@@ -4,7 +4,7 @@ Easily integrate Nicholas C. Zakas and Nicole Sullivan's [CSS Lint](http://cssli
 
 ## Installation
 
-There is currently a [bug in Compass](https://github.com/chriseppstein/compass/issues/1053) that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this custom version of Compass that includes compass-csslint:
+There is currently a [bug in Compass](https://github.com/chriseppstein/compass/issues/1053) that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this [custom version of Compass](https://github.com/Comcast/compass) that [includes compass-csslint](https://github.com/Comcast/compass/blob/c829eab33bb4087e3e3c8f72385c9e8105dc6702/lib/compass/commands.rb#L14):
 
 https://github.com/Comcast/compass
 
@@ -22,17 +22,11 @@ And then install your locally-built version of Compass
 
     $ gem install compass-0.12.2.<hash>.gem
 
-Once that is installed, you can safely install compass-csslint. Clone the repo:
+Be sure to use the actual filename that the build command created.
 
-https://github.com/Comcast/compass-csslint
+Once that is installed, you can safely install compass-csslint:
 
-From the root of that project run
-
-    $ gem build compass-csslint.gemspec
-
-And then install your locally-built version of the gem
-
-    $ gem install compass-csslint-0.0.1.gem
+    $ gem install compass-csslint
 
 ## Usage
 
