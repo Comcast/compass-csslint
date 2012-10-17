@@ -12,13 +12,15 @@ Clone that project, then from the root run
 
     $ gem build compass.gemspec
 
+Be sure to take note of the .gem filename
+
 Once that builds, you'll need to first uninstall your existing Compass gem
 
     $ gem uninstall compass
 
 And then install your locally-built version of Compass
 
-    $ gem install compass-0.12.2.b2400e9.gem
+    $ gem install compass-0.12.2.<hash>.gem
 
 Once that is installed, you can safely install compass-csslint. Clone the repo:
 
