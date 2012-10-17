@@ -36,7 +36,7 @@
 
 <h2>Installation</h2>
 
-<p>There is currently a <a href="https://github.com/chriseppstein/compass/issues/1053">bug in Compass</a> that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this custom version of Compass that includes compass-csslint:</p>
+<p>There is currently a <a href="https://github.com/chriseppstein/compass/issues/1053">bug in Compass</a> that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this <a href="https://github.com/Comcast/compass">custom version of Compass</a> that <a href="https://github.com/Comcast/compass/blob/c829eab33bb4087e3e3c8f72385c9e8105dc6702/lib/compass/commands.rb#L14">includes compass-csslint</a>:</p>
 
 <p><a href="https://github.com/Comcast/compass">https://github.com/Comcast/compass</a></p>
 
@@ -57,18 +57,11 @@
 <pre><code>$ gem install compass-0.12.2.&lt;hash&gt;.gem
 </code></pre>
 
-<p>Once that is installed, you can safely install compass-csslint. Clone the repo:</p>
+<p>Be sure to use the actual filename that the build command created.</p>
 
-<p><a href="https://github.com/Comcast/compass-csslint">https://github.com/Comcast/compass-csslint</a></p>
+<p>Once that is installed, you can safely install compass-csslint:</p>
 
-<p>From the root of that project run</p>
-
-<pre><code>$ gem build compass-csslint.gemspec
-</code></pre>
-
-<p>And then install your locally-built version of the gem</p>
-
-<pre><code>$ gem install compass-csslint-0.0.1.gem
+<pre><code>$ gem install compass-csslint
 </code></pre>
 
 <h2>Usage</h2>
