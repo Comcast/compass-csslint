@@ -12,9 +12,9 @@ module Compass
 
           Description:
             Compile project at the path specified or the current
-            directory if not specified and then run CSS Lint 
+            directory if not specified and then run CSS Lint
             against the generated CSS.
-            
+
           Options:
         }.strip.split("\n").map{|l| l.gsub(/^ {0,10}/,'')}.join("\n")
 
@@ -32,21 +32,25 @@ module Compass
           self.options[:list_rules] = true
           self.options[:nocompile] = true
         end
-        
+
         opts.on("--quiet", "Only output when errors are present.") do
           self.options[:quiet] = true
         end
-        
+
         opts.on("--errors=<rule[,rule]+>", "Indicate which rules to include as errors.") do |errors|
           self.options[:errors] = errors
         end
-        
+
         opts.on("--warnings=<rule[,rule]+>", "Indicate which rules to include as warnings.") do |warnings|
           self.options[:warnings] = warnings
         end
-        
+
         opts.on("--ignore=<rule,[,rule]+>", "Indicate which rules to ignore completely.") do |ignore|
           self.options[:ignore] = ignore
+        end
+
+        opts.on("--exclude-list=<file|dir[,file|dir]+>", "Indicate which files/directories to exclude from being linted.") do |exclude_list|
+          self.options[:exclude_list] = exclude_list
         end
 
         opts.on("--version", "Outputs the current version number of CSS Lint.\n\n") do
@@ -94,6 +98,10 @@ module Compass
 
         if options[:ignore]
           @options_str << '--ignore=' + options[:ignore] + ' '
+        end
+
+        if options[:exclude_list]
+          @options_str << '--exclude-list=' + options[:exclude_list] + ' '
         end
 
         if options[:version]
