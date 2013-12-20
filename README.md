@@ -22,7 +22,7 @@ To view options:
 
 ## Additional Links
 
-For a bare-bones sample project to see this in action, checkout the [compass-csslint-sample](https://github.com/Comcast/compass-csslint-sample) repo
+For a bare-bones sample project to see this in action, checkout the [compass-extensions-sample](https://github.com/Comcast/compass-extensions-sample) repo
 
 To run CSS Lint without Compass, you can use the standalone ruby gem:
 
