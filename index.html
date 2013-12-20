@@ -30,41 +30,23 @@
 
       </header>
       <section>
-        <h2>About</h2>
+        <h2>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
 
 <p>Easily integrate Nicholas C. Zakas and Nicole Sullivan's <a href="http://csslint.net/">CSS Lint</a> into your projects that use the Compass CSS Framework by providing a <code>compass csslint</code> command line option.</p>
 
-<h2>Installation</h2>
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<p>There is currently a <a href="https://github.com/chriseppstein/compass/issues/1053">bug in Compass</a> that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this <a href="https://github.com/Comcast/compass">custom version of Compass</a> that <a href="https://github.com/Comcast/compass/blob/c829eab33bb4087e3e3c8f72385c9e8105dc6702/lib/compass/commands.rb#L14">includes compass-csslint</a>:</p>
-
-<p><a href="https://github.com/Comcast/compass">https://github.com/Comcast/compass</a></p>
-
-<p>Clone that project, then from the root run</p>
-
-<pre><code>$ gem build compass.gemspec
-</code></pre>
-
-<p>Be sure to take note of the .gem filename</p>
-
-<p>Once that builds, you'll need to first uninstall your existing Compass gem</p>
-
-<pre><code>$ gem uninstall compass
-</code></pre>
-
-<p>And then install your locally-built version of Compass</p>
-
-<pre><code>$ gem install compass-0.12.2.&lt;hash&gt;.gem
-</code></pre>
-
-<p>Be sure to use the actual filename that the build command created.</p>
-
-<p>Once that is installed, you can safely install compass-csslint:</p>
+<p>Assuming ruby is installed on your system:</p>
 
 <pre><code>$ gem install compass-csslint
 </code></pre>
 
-<h2>Usage</h2>
+<p>Note that this requires at least version 1.0.0.alpha.13 of <a href="http://compass-style.org/">Compass</a> to work properly.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>Run the following command from the root of your Compass project:</p>
 
@@ -76,9 +58,10 @@
 <pre><code>$ compass csslint --help
 </code></pre>
 
-<h2>Additional Links</h2>
+<h2>
+<a name="additional-links" class="anchor" href="#additional-links"><span class="octicon octicon-link"></span></a>Additional Links</h2>
 
-<p>For a bare-bones sample project to see this in action, checkout the <a href="https://github.com/Comcast/compass-csslint-sample">compass-csslint-sample</a> repo</p>
+<p>For a bare-bones sample project to see this in action, checkout the <a href="https://github.com/Comcast/compass-extensions-sample">compass-extensions-sample</a> repo</p>
 
 <p>To run CSS Lint without Compass, you can use the standalone ruby gem:</p>
 
@@ -88,7 +71,8 @@
 <ul>
 <li><a href="https://rubygems.org/gems/css_lint">https://rubygems.org/gems/css_lint</a></li>
 <li><a href="https://github.com/Comcast/css_lint_ruby">https://github.com/Comcast/css_lint_ruby</a></li>
-</ul><h2>Authors</h2>
+</ul><h2>
+<a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
 
 <ul>
 <li>John Riviello - <a href="https://github.com/JohnRiv">https://github.com/JohnRiv</a>
@@ -105,7 +89,7 @@
 </ul>
       </section>
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
