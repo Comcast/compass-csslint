@@ -1,0 +1,5 @@
+{
+  "name": "compass-csslint",
+  "description": "Easily integrate CSS Lint into your Compass projects by providing a 'compass csslint' command line option.",
+  "tags": ["compass", "cli", "csslint", "lint", "code-quality"]
+}
